@@ -13,10 +13,10 @@ end
 
 def assign_rooms(speakers)
   speaker_room_message = []
- # speakers.each_with_index do |name, index|
-#    speaker_room_message.push("Hello, #{name}! You'll be assigned to room #{index + 1}!")
-  #end
-  speaker_room_message = speakers.collect{ |name| ""
+  speakers.each_with_index do |name, index|
+    speaker_room_message.push("Hello, #{name}! You'll be assigned to room {index + 1}!")
+  end
+  #speaker_room_message = speakers.collect{ |name| ""
 end
 
 def printer(attendees)
